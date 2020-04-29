@@ -54,6 +54,10 @@ header{
     background-color: rgb(67, 178, 230);
 }
 
+.header__buttons_round:hover{
+    background-color: rgb(37, 0, 248);
+}
+
 .header__spacer{
     flex-grow: 1;
 }
@@ -77,6 +81,10 @@ header{
     padding: 0.5em;
     text-decoration: none;
     color: rgb(114, 113, 113);
+}
+
+.courses a:hover{
+    background-color: rgb(195, 195, 195);
 }
 
 .courses__spacer{
