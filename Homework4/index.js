@@ -1,9 +1,17 @@
-let i = 0;
-let arr1 = [];
-while (i < 100){
-    arr1[i] = i;
-    i++;
+
+function shuffleArray(arr){
+    let i = 0;
+    while (i < arr.length){
+        let j = Math.floor(Math.random() * arr.length);
+        let tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+        i++;
+    }
 }
+
+let arr1 = Array(100).fill(0).map((e, i) => i + 1);
+shuffleArray(arr1);
 
 function getReversedArr(arr){
     let newArr = [...arr];
@@ -12,14 +20,7 @@ function getReversedArr(arr){
 
 let arr2 = getReversedArr(arr1);
 
-
-
-let arr3 = [...arr1];
-i = 0;
-while (i < arr1.length){
-    arr3[i] = arr1[i] - arr2[i];
-    i++;
-}
+let arr3 = [...arr1].map((e, i) => arr1[i] - arr2[i]);
 
 function getAVG(arr){
     let sum = 0;
@@ -28,7 +29,6 @@ function getAVG(arr){
     });
     return sum / arr.length;
 }
-
 
 let avg = getAVG(arr3);
 
