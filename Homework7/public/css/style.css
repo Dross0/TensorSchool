@@ -1,0 +1,27 @@
+.univer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#studentBlock{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#teacherBlock{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.student{
+    margin-right: 40px;
+    border: 1px solid gray;
+    padding: 0 15px;
+}
+
+.teacher{
+    margin-right: 40px;
+    border: 1px solid gray;
+    padding: 0 15px;
+}
