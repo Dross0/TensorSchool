@@ -6,3 +6,4 @@
 4. [Основы JavaScript. Часть 2](https://github.com/Dross0/TensorSchool/tree/master/Homework4)
 5. [ООП в JavaScript](https://github.com/Dross0/TensorSchool/tree/master/Homework5)
 6. [Паттерны в JavaScript](https://github.com/Dross0/TensorSchool/tree/master/Homework6)
+7. [Асинхронность в JavaScript](https://github.com/Dross0/TensorSchool/tree/master/Homework7)
