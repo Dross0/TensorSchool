@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Person from './person.js';
 import Student from './student.js';
+import Popup from './popup.js';
 
 class ResponeError extends Error{
     constructor(message){
@@ -12,9 +13,16 @@ class ResponeError extends Error{
 export default class StudentList extends Component{
     constructor(props){
         super(props);
-        this.state = {students: []};
+        this.state = {students: [], showPop: 0};
     }
 
+    showPop(name){
+        this.setState({showPop: name})
+    }
+
+    hidePop(){
+        this.setState({showPop: 0});
+    }
     
     addStudentByID(id){
         return this.props.dataSet.readByID(id).then(respone => {
@@ -24,8 +32,7 @@ export default class StudentList extends Component{
              throw ResponeError(`Cant get student id = {${id}}`);
         }).then(d => {
              const st = new Student(d.title, null, d.study, d.course, d.photo);
-             let p = <Person person = {st}/>
-             this.setState({students: this.state.students.concat([p])});
+             this.setState({students: this.state.students.concat([st])});
         });
     
     }
@@ -49,7 +56,18 @@ export default class StudentList extends Component{
 
     render(){
         return (<div className="students">
-            {this.state.students}
+            {this.state.students.map(student => (
+                [
+                <Person person={student} click={() => {this.showPop(student.name)}}/>,
+                <Popup 
+                    show={this.state.showPop === student.name}
+                    onHide={() => this.hidePop()}
+                    title = {student.name}
+                    content = {<center><img height="300" width="300" className="card__img" src={student.image || 'img/ui/default_pix.jpg'} /></center>}
+                />
+                ]
+            ))}
+            
         </div>);
     }
 }
