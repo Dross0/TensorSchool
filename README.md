@@ -8,3 +8,5 @@
 6. [Паттерны в JavaScript](https://github.com/Dross0/TensorSchool/tree/master/Homework6)
 7. [Асинхронность в JavaScript](https://github.com/Dross0/TensorSchool/tree/master/Homework7)
 8. [Компоненты в JavaScript](https://github.com/Dross0/TensorSchool/tree/master/Homework8)
+9. [Подгрузка данных в JavaScript](https://github.com/Dross0/TensorSchool/tree/master/Homework11)
+10. [Тестирование](https://github.com/Dross0/TensorSchool/tree/master/Homework10)
