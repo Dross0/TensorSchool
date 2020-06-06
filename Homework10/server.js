@@ -1,14 +1,25 @@
+// var express = require('express');
+// var jsonServer = require('json-server');
+
+
+// var srv = express();
+
+// srv.use(express.static('public'));
+
+// // https://github.com/typicode/json-server
+// srv.use('/api', jsonServer.defaults(), jsonServer.router('db.json'));
+
+// let server = srv.listen(8080, function () {
+//     console.log('Server listening on port 8080');
+// });
+
 var express = require('express');
-var jsonServer = require('json-server');
+var app = express();
 
+app.use(express.static('public/test'));
 
-var srv = express();
+var port = 3000
 
-srv.use(express.static('public'));
-
-// https://github.com/typicode/json-server
-srv.use('/api', jsonServer.defaults(), jsonServer.router('db.json'));
-
-let server = srv.listen(8080, function () {
-    console.log('Server listening on port 8080');
+app.listen(port, function(){
+    console.log("Server start on port: " + port);
 });
