@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+header img{
+    width: auto;
+    height: 30px;
+}
+
+header{
+    display: block;
+    margin-bottom: 100px;
+    max-width: 850px;
+    width: 850px;
+    margin: 20px auto;
+    margin-bottom: 70px;
+}
+
+.header__title{
+    display: inline;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+header span::before{
+    content: '';
+    display: block;
+    border-top: 3px solid black;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.person-card {
+    display: flex;
+    align-items: center;
+}
+
+.person-card__name, .person-card__info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.person-card__name {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.person-card__info {
+    font-size: 0.8em;
+}
+
+.person-card__image {
+    object-fit: cover;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.student__photo{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.person-card__img_round {
+    border-radius: 50%;
+}
+
+
+.persons {
+    display: grid;
+    justify-items: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.popup{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #f5f5f5;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px;
+}
+
+.card__img{
+    height: 300px;
+    width: auto;
+}
+
+.popup__header {
+    display: flex;
+    flex-direction: row;
+    line-height: 30px;
+    height: 40px;
+}
+
+.popup__title {
+    flex-grow: 1;
+    color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 10px;
+}
+
+.popup__close-button {
+    align-self: end;
+    width: 24px;
+    height: 24px;
+    padding: 3px 0px;
+    margin-left: 8px;
+    align-self: baseline;
+    cursor: pointer;
+}
+
+.popup__content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__text-content *{
+    margin: 1em;
+}
+
+.students{
+    margin: 0px auto;
+    width: 900px;
+    max-width: 900px;
+}
+
+.person-card{
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+
+
