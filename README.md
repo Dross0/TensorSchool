@@ -1,4 +1,4 @@
-# TensorSchool
+# TensorSchool JavaScript - весна 2020
 0. [Введение](https://github.com/Dross0/TensorSchool/tree/master/Homework0)
 1. [Стили](https://github.com/Dross0/TensorSchool/tree/master/Homework1)
 2. [Флексы, адаптивка, БЭМ и DOM](https://github.com/Dross0/TensorSchool/tree/master/Homework2)
