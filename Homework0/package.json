@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Dross0/TensorSchool#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
